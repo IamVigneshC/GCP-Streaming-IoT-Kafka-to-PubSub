@@ -36,6 +36,10 @@ Example output:
 [core]
 project = qwiklabs-gcp-44776a13dea667a6
 
+## Architecture:
+
+![Image of CloudBuild](https://github.com/IamVigneshC/GCP-Streaming-IoT-Kafka-to-PubSub/blob/main/Communication.png)
+
 ## Introduction
 
 With the announcement of the Google Cloud Confluent managed Kafka offering, it has never been easier to use Google Cloud's great data tools with Kafka. You can use the Apache Beam Kafka.io connector to go straight into Dataflow, but this may not always be the right solution.
@@ -44,14 +48,15 @@ Whether Kafka is provisioned in the Cloud or on premise, you might want to push 
 
 So how do you exchange messages between Kafka and Pub/Sub? This is where the Pub/Sub Kafka Connector comes in handy. In this lab you will learn the basic steps to start working with a Kafka connector on Google Cloud.
 
-Tip: In this lab you use a virtual machine with a single instance of Kafka. This Kafka instance connects to Pub/Sub and exchanges event messages between the two services.
+Tip: Here we use a virtual machine with a single instance of Kafka. This Kafka instance connects to Pub/Sub and exchanges event messages between the two services.
 
 In the real world, Kafka would likely be run in a cluster, but for this lab you will develop a simpler (and cheaper) usage pattern.
 
 
+![Image of CloudBuild](https://github.com/IamVigneshC/GCP-Streaming-IoT-Kafka-to-PubSub/blob/main/Architecture.png)
+
 ## Task 1. Configure the Kafka VM instance
 In the Cloud Console, go to Navigation Menu > Compute Engine and open an SSH shell to the Kafka VM named kafka-1-vm. (This is SSH Window A.)
-kafka_vm.png
 
 Export the path to the Java Virtual Machine for the Kafka VM.
 
@@ -230,6 +235,7 @@ Ctrl+C to stop this process.
 ## Task 5. Pub/Sub to Kafka testing
 Your architecture for testing Pub/Sub to Kafka is as illustrated below:
 
+![Image of CloudBuild](https://github.com/IamVigneshC/GCP-Streaming-IoT-Kafka-to-PubSub/blob/main/PubSub%20to%20Kafka%20testing.png)
 
 Note: Ensure that a Kafka instance is actually running in the background - there should still be an open window showing the output from the instance.
 
@@ -265,9 +271,10 @@ From the command above, a stream of messages should be observable in the Kafka c
 
 In this example you sent a stream of information between two services. As the example demonstrates, exchanging information once configured is fairly straightforward.
 
-Kafka to Pub/Sub testing
+### Kafka to Pub/Sub testing
 Our architecture for testing Kafka to Pub/Sub is illustrated below:
 
+![Image of CloudBuild](https://github.com/IamVigneshC/GCP-Streaming-IoT-Kafka-to-PubSub/blob/main/Kafka%20to%20PubSub%20testing.png)
 
 Return to SSH Window B, press Ctrl+C to terminate the command from the prior step. Use an editor to create a text file named tv.json and add the following contents:
 
@@ -302,6 +309,7 @@ In this example you have sent a stream of information between two services. When
 ## Task 6. IOT simulator - IoT core
 Extending your architecture allows the opportunity to explore further integration. In this section the IoT core service will be used to demonstrate connectivity of IoT devices, as illustrated below:
 
+![Image of CloudBuild](https://github.com/IamVigneshC/GCP-Streaming-IoT-Kafka-to-PubSub/blob/main/IOT%20simulator%20-%20IoT%20core.png)
 
 In the Cloud Console, go to Navigation Menu > Compute Engine and open an SSH shell to the iot-device-simulator instance.
 
