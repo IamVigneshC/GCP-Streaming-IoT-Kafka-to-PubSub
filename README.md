@@ -1,11 +1,10 @@
 # Streaming-IoT-Kafka-to-PubSub
 
-Launch a Kafka instance and use it to communicate with Pub/Sub. 
-
-Configure a Kafka connector to integrate with Pub/Sub  
-Setup topics and subscriptions for message communication  
-Perform basic testing of both Kafka and Pub/Sub services  
-Connect IoT Core to Pub/Sub
+• Launch a Kafka instance and use it to communicate with Pub/Sub
+• Configure a Kafka connector to integrate with Pub/Sub  
+• Setup topics and subscriptions for message communication  
+• Perform basic testing of both Kafka and Pub/Sub services  
+• Connect IoT Core to Pub/Sub
 
 
 Activate Google Cloud Shell
@@ -19,11 +18,6 @@ Output:
 
 Credentialed accounts:
  - <myaccount>@<mydomain>.com (active)
-Example output:
-
-Credentialed accounts:
- - google1623327_student@qwiklabs.net
-You can list the project ID with this command:
 
 `gcloud config list project`
 
@@ -31,10 +25,6 @@ Output:
 
 [core]
 project = <project_ID>
-Example output:
-
-[core]
-project = qwiklabs-gcp-44776a13dea667a6
 
 ## Architecture:
 
