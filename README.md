@@ -115,7 +115,7 @@ This configuration allows messages to be consumed by Pub/Sub. Go look at Pub/Sub
 
 Now create a subscription for traffic published from Kafka:
 
-gcloud pubsub subscriptions create from-kafka --topic=from-kafka --topic-project=$PROJECT_ID
+`gcloud pubsub subscriptions create from-kafka --topic=from-kafka --topic-project=$PROJECT_ID `
 
 ## 3. Start the Kafka VM application instance
 Now you will set up Kafka topics interacting with Pub/Sub.
