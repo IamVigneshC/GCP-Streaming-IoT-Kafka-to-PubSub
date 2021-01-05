@@ -41,11 +41,11 @@ With the announcement of the Google Cloud Confluent managed Kafka offering, it h
 
 Whether Kafka is provisioned in the Cloud or on premise, you might want to push to a subset of Pub/Sub topics. Why? For the flexibility of having Pub/Sub as your Google Cloud event notifier. Then you could not only choreograph Dataflow jobs, but also use topics to trigger Cloud Functions.
 
-So how do you exchange messages between Kafka and Pub/Sub? This is where the Pub/Sub Kafka Connector comes in handy. In this lab you will learn the basic steps to start working with a Kafka connector on Google Cloud.
+So how do you exchange messages between Kafka and Pub/Sub? This is where the Pub/Sub Kafka Connector comes in handy. 
 
 Tip: Here we use a virtual machine with a single instance of Kafka. This Kafka instance connects to Pub/Sub and exchanges event messages between the two services.
 
-In the real world, Kafka would likely be run in a cluster, but for this lab you will develop a simpler (and cheaper) usage pattern.
+In the real world, Kafka would likely be run in a cluster.
 
 
 ![Image of CloudBuild](https://github.com/IamVigneshC/GCP-Streaming-IoT-Kafka-to-PubSub/blob/main/Architecture.png)
