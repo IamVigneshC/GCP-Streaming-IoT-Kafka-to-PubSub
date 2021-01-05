@@ -15,21 +15,6 @@
 Activate Google Cloud Shell
 Cloud Shell Terminal
 
-You can list the active account name with this command:
-
-` gcloud auth list `
-
-Output:
-
-Credentialed accounts:
- - <myaccount>@<mydomain>.com (active)
-
-`gcloud config list project`
-
-Output:
-
-[core]
-project = <project_ID>
 
 ## Architecture:
 
