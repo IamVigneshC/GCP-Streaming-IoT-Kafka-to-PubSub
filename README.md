@@ -308,9 +308,9 @@ Extending your architecture allows the opportunity to explore further integratio
 
 In the Cloud Console, go to Navigation Menu > Compute Engine and open an SSH shell to the iot-device-simulator instance.
 
-SSH into the instance and Clone a git repository to gain access to the lab specific tools:
+SSH into the instance and Clone a git repository to gain access to the specific tools:
 
-Clone a git repository to gain access to lab specific code:
+Clone a git repository to gain access to specific code:
 
 `git clone http://github.com/GoogleCloudPlatform/training-data-analyst`
 
